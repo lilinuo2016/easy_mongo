@@ -1,5 +1,42 @@
+[![Build Status](https://travis-ci.org/JeremyWei/easyMongo.svg?branch=master)](https://travis-ci.org/JeremyWei/easyMongo)
+
 EasyMongo
 ===========
+
+Feature
+===========
+* Persistent connection
+* Light & Easy
+* Based on native mongodb driver
+
+Install
+===========
+
+	npm install easyMongo
+
+How to use
+===========
+
+	var easyMongo = require('../.'),
+	  easyClient = easyMongo.create();
+  
+	easyClient.collection('user', function (err, collection) {
+	  // do something with collection user
+	  var user = {'name' : 'foo'};
+	  collection.insert(user, {w:1}, function(err, result) {
+	    // ...
+	  });
+	});
+
+
+	// DB
+	easyClient.database('test', function (err, db) {
+	  // do something with db test
+	  db.createCollection('friend', function (err, collection) {
+	    // ...
+	  });
+	});
+
 
 LICENSE
 ===========
