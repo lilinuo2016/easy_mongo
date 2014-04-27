@@ -14,6 +14,13 @@ Install
 
 	npm install easy_mongo
 
+Test
+===========
+
+You should have mongodb instance started on 127.0.0.1:27017 without auth.
+
+	make test
+	
 How to use
 ===========
 

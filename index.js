@@ -5,4 +5,4 @@
  * 
  * MIT License 
  */
-module.exports = require('./lib/easyMongo');
+module.exports = require('./lib/easy_mongo');
