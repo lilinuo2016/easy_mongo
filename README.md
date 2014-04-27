@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/JeremyWei/easyMongo.svg?branch=master)](https://travis-ci.org/JeremyWei/easyMongo)
+[![Build Status](https://travis-ci.org/JeremyWei/easy_mongo.svg?branch=master)](https://travis-ci.org/JeremyWei/easy_mongo)
 
-EasyMongo
+easy mongo
 ===========
 
 Feature
@@ -12,12 +12,12 @@ Feature
 Install
 ===========
 
-	npm install easyMongo
+	npm install easy_mongo
 
 How to use
 ===========
 
-	var easyMongo = require('../.'),
+	var easyMongo = require('easy_mongo'),
 	  easyClient = easyMongo.create();
   
 	easyClient.collection('user', function (err, collection) {
